@@ -119,6 +119,7 @@ p {
 .site-contact {
   display: flex;
   margin-left: auto;
+  align-content: center;
 }
 
 .site-contact .link {
@@ -127,6 +128,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   align-items: center;
+  display: flex;
+  justify-content: center;
 }
 .site-nav .link.current {
   color: var(--accent-color);
@@ -136,14 +139,40 @@ p {
   margin-left: 50px;
 }
 
-.site-contact .link:hover,
-.site-contact .link:focus {
+.link:hover,
+.link:focus {
+  fill: var(--accent-color);
   color: var(--accent-color);
 }
 .leter-header {
   margin-right: 10px;
 }
+.client-item {
+  height: 92px;
+  width: 170px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.client-company {
+  fill: #afb1b8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.client-company:hover,
+.client-company:focus {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
 /* footer */
 .page-footer {
   background-color: var(--secondary-background-color);
@@ -228,25 +257,35 @@ p {
   letter-spacing: 0.03em;
 }
 .footer-icon {
-  fill: #afb1b8;
+  fill: #ffffff;
   border-radius: 50%;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .footer-icon-last {
   margin-right: 0;
-  fill: #afb1b8;
+  fill: #ffffff;
   border-radius: 50%;
   width: 100%;
   height: 100%;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: #2196f3;
 }
 
+.footer-icon-last:hover,
+.footer-icon-last:focus {
+  background-color: #2196f3;
+}
 /* Main index.html*/
 
 /* section 1 Hero */
@@ -336,7 +375,14 @@ p {
   line-height: 1.7;
   width: 270px;
 }
+.job-icon {
+  height: 120px;
+  width: 270px;
 
+  border-radius: 4px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
 /* Чим ми займаємося */
 
 .img-section {
@@ -389,7 +435,22 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.team-icon {
+  fill: #afb1b8;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+}
 
+.team-icon:hover,
+.team-icon:focus {
+  fill: var(--white-color);
+  background-color: #2196f3;
+}
 /* Main portfolio.html*/
 
 .page-main {
@@ -501,7 +562,8 @@ img {
   padding-right: 24px;
 }
 
-.card-item:hover {
+.card-item:hover,
+.card-item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
